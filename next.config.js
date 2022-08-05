@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+    reactStrictMode: true,
+    images: {
+        loader: "akamai",
+        path: ""
+    },
+    basePath: "/get-vpn",
+    assetPrefix: "/get-vpn"
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
