@@ -5,8 +5,8 @@ const nextConfig = {
         loader: "akamai",
         path: ""
     },
-    basePath: "/get-vpn",
-    assetPrefix: "/get-vpn"
+    basePath: "/get-vpn-site",
+    assetPrefix: "/get-vpn-site"
 };
 
 module.exports = nextConfig;
