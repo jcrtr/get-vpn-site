@@ -1,3 +1,6 @@
+const isProd = process.env.NODE_ENV === 'production'
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
@@ -5,8 +8,8 @@ const nextConfig = {
         loader: "akamai",
         path: ""
     },
-    basePath: "/get-vpn-site",
-    assetPrefix: "/get-vpn-site"
+    basePath: isProd ? "/get-vpn-site" : '',
+    assetPrefix: isProd ? "/get-vpn-site" : ''
 };
 
 module.exports = nextConfig;
