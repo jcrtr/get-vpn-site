@@ -10,7 +10,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>Cамый быстрый VPN!</title>
                 <meta name="description" content="Доступ к cамому быстрому VPN!"/>
-                <link rel="icon" href={`${process.env.NEXT_PUBLIC}/logo.png`}/>
+                <link rel="icon" href={`/logo.png`}/>
             </Head>
 
             <main className={'min-h-screen lg:bg-gray-100 flex items-center justify-center'}>
