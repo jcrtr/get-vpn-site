@@ -35,18 +35,19 @@ const Home: NextPage = () => {
                 <meta name="twitter:title" content={SEO.title}/>
                 <meta name="twitter:description" content={SEO.description}/>
                 <meta name="twitter:image" content={`/logo.png`}/>
-
-                <Script id="google-tags" strategy="afterInteractive">
-                    {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-                                        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-                                        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-                                        })(window,document,'script','dataLayer','GTM-M552FKG');`
-                    }
-                </Script>
                 <Script
                     strategy="afterInteractive"
                     src={`https://www.googletagmanager.com/gtag/js?id=GTM-M552FKG`}/>
+
+                <script
+                        dangerouslySetInnerHTML={{
+                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                                        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                                        })(window,document,'script','dataLayer','GTM-M552FKG');`,
+                        }}
+                    />
             </Head>
 
             <main className={'min-h-screen lg:bg-gray-100 flex items-center justify-center'}>
