@@ -35,9 +35,9 @@ const Home: NextPage = () => {
                 <meta name="twitter:title" content={SEO.title}/>
                 <meta name="twitter:description" content={SEO.description}/>
                 <meta name="twitter:image" content={`/logo.png`}/>
-                <Script
-                    strategy="afterInteractive"
-                    src={`https://www.googletagmanager.com/gtag/js?id=GTM-M552FKG`}/>
+                {/*<Script*/}
+                {/*    strategy="afterInteractive"*/}
+                {/*    src={`https://www.googletagmanager.com/gtag/js?id=GTM-M552FKG`}/>*/}
 
                 <script
                         dangerouslySetInnerHTML={{
