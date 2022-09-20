@@ -3,12 +3,11 @@ import Head from 'next/head'
 import IconHead from '../components/iconHead'
 import BotInfo from '../components/botInfo'
 import {FaBullhorn, FaInfoCircle} from "react-icons/fa";
-import Script from "next/script";
-
+import { BiCopy } from "react-icons/bi";
 
 const SEO = {
-    title: 'Cамый быстрый VPN!',
-    description: 'Получи доступ к cамому быстрому VPN!'
+    title: 'Скачать лучший VPN для iphone и android (бесплатно) на русском',
+    description: 'Здесь ты можешь скачать лучший VPN для своего Iphone или Android. Бесплатный тестовый период. Переходи на наш телеграм GET VPN'
 }
 
 
@@ -40,14 +39,14 @@ const Home: NextPage = () => {
                 {/*    src={`https://www.googletagmanager.com/gtag/js?id=GTM-M552FKG`}/>*/}
 
                 <script
-                        dangerouslySetInnerHTML={{
-                            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    dangerouslySetInnerHTML={{
+                        __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
                                         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                                         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                                         })(window,document,'script','dataLayer','GTM-M552FKG');`,
-                        }}
-                    />
+                    }}
+                />
             </Head>
 
             <main className={'min-h-screen lg:bg-gray-100 flex items-center justify-center'}>
@@ -57,7 +56,20 @@ const Home: NextPage = () => {
                         Доступ к cамому быстрому VPN!
                     </h1>
                     <BotInfo/>
-                    <div className={'flex items-center justify-center py-1'}>
+                    <div
+                        className={'flex items-center justify-between py-2 px-4 rounded-large border-2 border-red-600 font-bold'}>
+                        <p>ПРОМОКОД ДЛЯ ТЕСТА</p>
+                        <button
+                            className={'flex flex-wrap items-center'}
+                            onClick={() => {
+                                navigator.clipboard.writeText('vpn22')
+                            }}
+                        >
+                            <p className={'text-red-600'}>vpn22</p>
+                            <p className={'px-2 text-red-600 font-bold'}><BiCopy /></p>
+                        </button>
+                    </div>
+                    <div className={'flex items-center justify-center py-1 mt-8'}>
                         <FaInfoCircle/>
                         <p className={'ml-2'}>По всем вопросам <a href={'mailto:get_vpn_sup@proton.me'}
                                                                   className={'text-blue-600'}>get_vpn_sup@proton.me</a>
