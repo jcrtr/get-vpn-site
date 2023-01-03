@@ -64,7 +64,7 @@ const Home: NextPage = () => {
                             onClick={() => {
                                 navigator.clipboard.writeText('vpn22')
                             }}>
-                            <p className={'text-red-600'}>vpn22</p>
+                            <p className={'text-red-600'}>site</p>
                             <p className={'px-2 text-red-600 font-bold'}>
                                 <BiCopy />
                             </p>
